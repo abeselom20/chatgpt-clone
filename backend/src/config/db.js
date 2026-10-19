@@ -2,10 +2,7 @@ import mysql from "mysql2/promise";
 
 // Cloud databases like TiDB Cloud only accept encrypted (TLS) connections.
 // Set DB_SSL=true in the deployed environment; leave it unset for local MySQL.
-
 const useSSL = process.env.DB_SSL === "true";
-...
-  
 
 export const pool = mysql.createPool({
   host: process.env.DB_HOST || "localhost",

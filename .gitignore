@@ -1,0 +1,17 @@
+# Dependencies (reinstalled with npm install)
+node_modules/
+
+# Secrets - API keys and DB passwords must never go to GitHub
+.env
+.env.local
+
+# Build output
+dist/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Bootcamp class materials (not my code)
+Class note/
